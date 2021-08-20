@@ -26,3 +26,4 @@ Let the original image be of the dimensions 3xHxW where 3 is nothing but the RGB
 
 The Encoder takes in the modified feed passed through the Resnet block and compressed 1D image and process the postional and patch embeddings. The encoder works on a multi head attention model where in DeTr we have 8 heads. The Result of the encoder generated is passed to the decoder. Along with these imputs of D, H/32, W/32 we have the object queries as additional inputs of dimensions dxN to the Multi-Head Attention
 
+### Q1. We do something here to generate NxMxH/32xW/32 maps. **(WHAT DO WE DO HERE?)**
