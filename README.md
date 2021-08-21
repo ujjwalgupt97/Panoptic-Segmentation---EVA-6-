@@ -73,13 +73,19 @@ Here are the steps what I intend to follow to solve the Capstone project. These 
 
 - Gather the Dataset. The dataset contains both the stuff and the things . Things from the images we annotate and stuff from DETR. 
 - Convert the Dataset in COCO format . 
-- Train the dataset passing it through a modelwhich trains to predict bounding boxes for both these stuff and things . 
+- Train the dataset to predict bounding boxes passing it through a model which trains to predict bounding boxes for both these stuff and things . 
+- Apply a masking head on these predicted boundig box to avoid overlaps. 
 - Prepare the Resnet block . 
 - Freeze the weights of the bounding box prediction. 
 - Pass in the bounidng boxes image through a model to create the attention maps over the Resnet to generate the Segmentation scale. 
 - Concatinate these maps to generate the final Panoptic segmented images. 
 
 P.S. - These steps may change as I go ahead with the implementation . This is my initial intended approach for the Capstone Project . 
+
+Here are some of the links which I intend to use for going aheead with the Project. 
+- https://github.com/facebookresearch/detr/blob/master/models/segmentation.py
+- https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123460205.pdf
+- https://github.com/facebookresearch/detr
 
 # Contributor:
 
