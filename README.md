@@ -69,3 +69,19 @@ The number of bounding boxes created is equal to the attention map. Each attenti
 
 ## My Approach. 
 
+Here are the steps what I intend to follow to solve the Capstone project. These might change as I proceed with the Part 2 and Part 3 of the Project . 
+
+- Gather the Dataset. The dataset contains both the stuff and the things . Things from the images we annotate and stuff from DETR. 
+- Convert the Dataset in COCO format . 
+- Train the dataset passing it through a modelwhich trains to predict bounding boxes for both these stuff and things . 
+- Prepare the Resnet block . 
+- Freeze the weights of the bounding box prediction. 
+- Pass in the bounidng boxes image through a model to create the attention maps over the Resnet to generate the Segmentation scale. 
+- Concatinate these maps to generate the final Panoptic segmented images. 
+
+P.S. - These steps may change as I go ahead with the implementation . This is my initial intended approach for the Capstone Project . 
+
+# Contributor:
+
+Ujjwal Gupta (ujjwalgupta97@gmail.com)
+
